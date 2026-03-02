@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto Commit"
+  short_description: "Auto-commit each validated discrete code change"
+  default_prompt: "Use $auto-commit to implement my task and commit each discrete validated change automatically."
