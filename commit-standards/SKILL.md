@@ -12,6 +12,8 @@ Use this skill when drafting, revising, or reviewing commit messages.
 - Be terse. Every line must earn its tokens.
 - Optimize for both human and agent readers.
 - Keep claims factual and specific.
+- Do NOT use `--no-verify` when committing. If there are issue correct them and
+  try again.
 
 ## Required Body Content
 
