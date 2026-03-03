@@ -39,6 +39,19 @@ Add when relevant:
 
 - Include only sections that add decision or verification value.
 - Omit empty or non-applicable sections; do not leave placeholder bullets.
+- For tiny/self-evident changes, use the minimal body format below.
+
+## Minimal Body (Trivial Changes)
+
+Use this when the diff is very small and intent is obvious:
+
+```text
+Changes:
+- ...
+
+Why:
+- ...
+```
 
 ## If The Commit Solves An Issue
 
