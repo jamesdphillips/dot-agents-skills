@@ -40,7 +40,7 @@ Commit during implementation, not after a separate prompt.
 
 - Avoid broad staging.
 - Never include unrelated dirty-tree changes.
-- If unrelated files are staged, unstage them or bypass them in scoped staging.
+- If unrelated files are staged, unstage them (`git restore --staged <path...>`) or commit only explicitly staged scoped paths.
 - Do not defer all commits to the end once validated units exist.
 
 ## Overrides and Exceptions
