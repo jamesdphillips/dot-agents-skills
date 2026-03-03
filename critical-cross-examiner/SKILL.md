@@ -75,8 +75,10 @@ Use strict, high-scrutiny critique to improve decision quality.
 
 ## Feedback Loop
 
-- When `OPEN_QUESTIONS.md` accumulates repeated failure patterns, promote them into this skill as checklist items.
-- In `Open Questions Log Update`, state whether a new recurring pattern was identified.
+- Treat `OPEN_QUESTIONS.md` as an inbox, not a source of truth.
+- Promote repeated or high-impact patterns into `CRITIQUE_PATTERNS.md` as checklist items.
+- Version promotions like code: keep them atomic and include rationale/evidence in commit messages.
+- In `Open Questions Log Update`, state whether a new recurring pattern was identified and whether it was promoted.
 
 ## Prior Art References
 
