@@ -14,6 +14,12 @@ Use for drafting, revising, or reviewing commit messages.
 - Keep claims factual and specific.
 - Do not use `--no-verify`. If checks fail, fix and retry.
 
+## Subject Line
+
+- Format: `<type>(scope): summary` (scope optional).
+- Use imperative mood (`add`, `fix`, `refactor`), not past tense.
+- Keep subject concise (target `<= 72` chars).
+
 ## Required Body Content
 
 Include:
