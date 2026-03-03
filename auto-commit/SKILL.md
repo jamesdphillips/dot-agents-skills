@@ -29,9 +29,12 @@ Commit during implementation, not after a separate prompt.
 4. If checks fail, do not commit; fix issues and rerun checks.
 5. If no formal check exists, run fallback sanity checks in order: targeted run, focused build/lint, static inspection. Note the limit.
 6. Stage only scoped files (`git add <path...>`).
-7. If nothing is staged for this scope, stop; do not commit.
-8. Commit with an intent-specific message.
-9. Repeat.
+7. If one file has mixed intents, split edits or use partial staging (`git add -p`).
+8. Keep dependency-first commit order (prerequisites before dependents).
+9. If nothing is staged for this scope, stop; do not commit.
+10. Commit with an intent-specific message.
+11. If hooks fail, fix and retry. Do not bypass hooks unless the user explicitly asks.
+12. Repeat.
 
 ## Guardrails
 
