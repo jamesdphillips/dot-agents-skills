@@ -14,10 +14,19 @@ Use for drafting, revising, or reviewing commit messages.
 - Keep claims factual and specific.
 - Do not use `--no-verify`. If checks fail, fix and retry.
 
+## Message Layout
+
+- Subject
+- Blank line
+- Body (if needed)
+- Blank line
+- Optional trailers (`Token: Value`, one per line)
+
 ## Subject Line
 
 - Use imperative mood (`add`, `fix`, `refactor`), not past tense.
-- Keep subject concise (target `<= 72` chars).
+- Target `<= 50` chars. Hard cap `<= 72`.
+- No trailing period.
 
 ## Required Body Content
 
@@ -38,11 +47,10 @@ Add when relevant:
 
 - Include only sections that add decision or verification value.
 - Omit empty or non-applicable sections; do not leave placeholder bullets.
-- For tiny/self-evident changes, use the minimal body format below.
 
 ## Minimal Body (Trivial Changes)
 
-Use this when the diff is very small and intent is obvious:
+Use when the diff is very small and intent is obvious:
 
 ```text
 Changes:
