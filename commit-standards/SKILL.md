@@ -1,45 +1,41 @@
 ---
 name: commit-standards
-description: Write token-efficient git commit messages with concise but complete bodies, including what changed, why, assumptions, alternatives, history, and issue-fix validation details.
+description: Draft concise, factual commit messages with required rationale, assumptions, and issue-fix validation details.
 ---
 
 # Commit Standards
 
-Use this skill when drafting, revising, or reviewing commit messages.
+Use for drafting, revising, or reviewing commit messages.
 
 ## Goals
 
-- Be terse. Every line must earn its tokens.
-- Optimize for both human and agent readers.
+- Be terse; every line must earn tokens.
+- Optimize for human and agent readers.
 - Keep claims factual and specific.
-- Do NOT use `--no-verify` when committing. If there are issue correct them and
-  try again.
+- Do not use `--no-verify`. If checks fail, fix and retry.
 
 ## Required Body Content
 
-Commit message bodies must include:
-
-- Detailed description of changes made.
-- Why this approach was taken.
-- Assumptions made.
+Include:
+- What changed (key files/behavior).
+- Why this approach was chosen.
+- Assumptions that affect correctness.
 
 ## Recommended Body Content
 
-Include when relevant:
-
-- Alternatives considered and why they were not chosen.
-- Relevant history and context.
-- Original prompt or request summary.
-- Approaches abandoned and why.
+Add when relevant:
+- Alternatives considered and rejection reason.
+- Relevant context/history.
+- Request summary (original prompt).
+- Abandoned approaches and why.
 
 ## If The Commit Solves An Issue
 
 Also include:
-
-- Detailed problem description.
-- Assumptions made while diagnosing/fixing.
-- Reproduction steps (if known and relevant).
-- Validation steps and evidence that resolution worked.
+- Problem statement.
+- Assumptions during diagnosis/fix.
+- Repro steps (if known/relevant).
+- Validation steps and evidence of fix.
 
 ## Style
 
