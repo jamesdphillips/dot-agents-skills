@@ -35,6 +35,11 @@ Add when relevant:
 - Request summary (original prompt).
 - Abandoned approaches and why.
 
+## Conditional Inclusion
+
+- Include only sections that add decision or verification value.
+- Omit empty or non-applicable sections; do not leave placeholder bullets.
+
 ## If The Commit Solves An Issue
 
 Also include:
