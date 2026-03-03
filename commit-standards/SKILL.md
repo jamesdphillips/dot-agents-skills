@@ -16,7 +16,6 @@ Use for drafting, revising, or reviewing commit messages.
 
 ## Subject Line
 
-- Format: `<type>(scope): summary` (scope optional).
 - Use imperative mood (`add`, `fix`, `refactor`), not past tense.
 - Keep subject concise (target `<= 72` chars).
 
