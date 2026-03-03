@@ -37,7 +37,7 @@ Use strict, high-scrutiny critique to improve decision quality.
 - Maximize clarification during planning before committing to implementation.
 - Do not halt momentum when information is incomplete.
 - If clarification is unavailable, proceed with explicit assumptions and label them.
-- If a blocking question appears during implementation, append it to `OPEN_QUESTIONS.md` at the repo root and continue with the safest reasonable assumption.
+- If a blocking question appears during implementation, append it to `OPEN_QUESTIONS.md` in this skill folder and continue with the safest reasonable assumption.
 
 ## Research Requirement
 
