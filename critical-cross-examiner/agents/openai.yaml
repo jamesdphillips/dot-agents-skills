@@ -1,0 +1,4 @@
+interface:
+  display_name: "Critical Cross-Examiner"
+  short_description: "Stress-test plans before execution"
+  default_prompt: "Use $critical-cross-examiner in planning to challenge goals, constraints, and logic before implementation."
