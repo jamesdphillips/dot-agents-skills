@@ -1,6 +1,6 @@
 ---
 name: commit-standards
-description: Draft concise, factual commit messages with required rationale, assumptions, and issue-fix validation details.
+description: Draft terse, factual commit messages with explicit what/why/assumptions and issue-fix validation evidence.
 ---
 
 # Commit Standards
