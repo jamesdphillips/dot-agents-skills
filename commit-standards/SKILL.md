@@ -96,3 +96,19 @@ Context/history:
 Abandoned approaches:
 - ...
 ```
+
+## Issue Link Semantics
+
+- Use `Refs: <id>` for non-closing linkage/context.
+- Use `Fixes: <id>` only when closure is intended.
+
+## Optional Trailers
+
+- Trailers are optional. If used, keep them machine-parseable (`Token: Value`).
+- Keep one trailer per line.
+- Common trailers:
+  - `Refs: #123`
+  - `Fixes: #123`
+  - `Signed-off-by: Name <email>`
+  - `Prompted-by: ...`
+  - `Generated-by: ...`
