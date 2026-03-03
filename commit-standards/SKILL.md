@@ -12,7 +12,7 @@ Use for drafting, revising, or reviewing commit messages.
 - Be terse. No byte is gratis—only the Via Dolorosa.
 - Optimize for human and agent readers.
 - Keep claims factual and specific.
-- Do not use `--no-verify`. If checks fail, fix and retry ([Git Commit Docs]).
+- Do not use `--no-verify`. If checks fail, fix and retry.
 
 ## Message Layout
 
@@ -20,12 +20,12 @@ Use for drafting, revising, or reviewing commit messages.
 - Blank line
 - Body (if needed)
 - Blank line
-- Optional trailers (`Token: Value`, one per line) ([Git Trailer Parser])[^trailers]
+- Optional trailers (`Token: Value`, one per line)[^trailers]
 
 ## Subject Line
 
 - Use imperative mood (`add`, `fix`, `refactor`), not past tense.
-- Target `<= 50` chars. Hard cap `<= 72` ([Kubernetes PR Guide], [Submitting Patches]).[^subject]
+- Target `<= 50` chars. Hard cap `<= 72`.[^subject]
 - No trailing period.
 - Keep the subject focused on the action; move nuance, rationale, and constraints to the body.
 
@@ -36,11 +36,11 @@ Use for drafting, revising, or reviewing commit messages.
 
 ## Body Requirements
 
-Use `Changes` and `Why` for all commits with a body ([Submitting Patches]).[^what-why]
+Use `Changes` and `Why` for all commits with a body.[^what-why]
 
 Use Title Case for section headers (for example, `Changes`, `Why`, `Assumptions`).
 
-`Assumptions` is required whenever behavior depends on context not obvious in the diff; include all such assumptions for auditability ([Submitting Patches]).[^assumptions]
+`Assumptions` is required whenever behavior depends on context not obvious in the diff; include all such assumptions for auditability.[^assumptions]
 
 `Validation` is recommended for any commit with testable outcomes, even when the commit is not framed as an issue-fix.
 
@@ -101,12 +101,12 @@ Abandoned Approaches:
 
 ## Issue Link Semantics
 
-- Use `Refs: <id>` for non-closing linkage/context ([GitHub Issue Linking]).[^issue-link]
-- Use `Fixes: <id>` only when closure is intended ([GitHub Issue Linking]).[^issue-link]
+- Use `Refs: <id>` for non-closing linkage/context.[^issue-link]
+- Use `Fixes: <id>` only when closure is intended.[^issue-link]
 
 ## Optional Trailers
 
-- Trailers are optional. If used, keep them machine-parseable (`Token: Value`) ([Git Trailer Parser]).[^trailers]
+- Trailers are optional. If used, keep them machine-parseable (`Token: Value`).[^trailers]
 - Keep one trailer per line.
 - Common trailers:
   - `Refs: #123`
