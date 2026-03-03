@@ -13,6 +13,7 @@ Commit during implementation, not after a separate prompt.
 - Finish one discrete change at a time.
 - Commit immediately after validation.
 - Do not wait for a follow-up commit request.
+- Never create empty/no-op commits.
 
 ## Discrete Change
 
@@ -24,10 +25,13 @@ Commit during implementation, not after a separate prompt.
 
 1. Pick the next discrete change.
 2. Implement only that scope.
-3. Run relevant checks.
-4. Stage only scoped files (`git add <path...>`).
-5. Commit with an intent-specific message.
-6. Repeat.
+3. Run at least one check: targeted test, lint/typecheck, or build.
+4. If checks fail, do not commit; fix issues and rerun checks.
+5. If no formal check exists, run fallback sanity checks in order: targeted run, focused build/lint, static inspection. Note the limit.
+6. Stage only scoped files (`git add <path...>`).
+7. If nothing is staged for this scope, stop; do not commit.
+8. Commit with an intent-specific message.
+9. Repeat.
 
 ## Guardrails
 
