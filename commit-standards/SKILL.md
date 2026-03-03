@@ -28,21 +28,6 @@ Use for drafting, revising, or reviewing commit messages.
 - Target `<= 50` chars. Hard cap `<= 72`.
 - No trailing period.
 
-## Required Body Content
-
-Include:
-- What changed (key files/behavior).
-- Why this approach was chosen.
-- Assumptions that affect correctness.
-
-## Recommended Body Content
-
-Add when relevant:
-- Alternatives considered and rejection reason.
-- Relevant context/history.
-- Request summary (original prompt).
-- Abandoned approaches and why.
-
 ## Conditional Inclusion
 
 - Include only sections that add decision or verification value.
@@ -60,20 +45,35 @@ Why:
 - ...
 ```
 
-## If The Commit Solves An Issue
+## Non-Trivial Body
 
-Also include:
-- Problem statement.
-- Assumptions during diagnosis/fix.
-- Repro steps (if known/relevant).
-- Validation steps and evidence of fix.
+For non-trivial changes, include:
+- `Changes`
+- `Why`
+- `Assumptions`
 
-## Style
+## Issue-Fix Body
 
-- Use short sections with clear labels.
-- Prefer concrete nouns, filenames, commands, and outcomes.
-- Avoid filler, repetition, and long prose.
-- Keep scope aligned with the diff.
+If the commit solves an issue, include:
+- `Problem`
+- `Validation`
+- `Reproduction` (when known/relevant)
+
+Use structured validation evidence:
+
+```text
+Validation:
+- `command`: ...
+- `expected`: ...
+- `actual`: ...
+```
+
+## Recommended Sections
+
+Add only when they add decision value:
+- `Alternatives considered`
+- `Context/history`
+- `Abandoned approaches`
 
 ## Suggested Body Template
 
@@ -95,19 +95,4 @@ Context/history:
 
 Abandoned approaches:
 - ...
-```
-
-## Suggested Issue-Fix Addendum
-
-```text
-Problem:
-- ...
-
-Reproduction:
-- ...
-
-Validation:
-- `command`: ...
-- `expected`: ...
-- `actual`: ...
 ```
