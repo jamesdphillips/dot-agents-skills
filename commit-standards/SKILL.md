@@ -9,7 +9,7 @@ Use for drafting, revising, or reviewing commit messages.
 
 ## Goals
 
-- Be terse; every line must earn tokens.
+- Be terse. No byte is gratis—only the Via Dolorosa.
 - Optimize for human and agent readers.
 - Keep claims factual and specific.
 - Do not use `--no-verify`. If checks fail, fix and retry.
